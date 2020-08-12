@@ -1,0 +1,19 @@
+from cryptovinaigrette import cryptovinaigrette
+import base64
+import hashlib
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+
+filePrivateKey=sys.argv[1]
+fileSigned=sys.argv[2]
+
+signature = cryptovinaigrette.rainbowKeygen.sign(sys.argv[1], sys.argv[2])
+
+keyBase64=standard_b64encode(signature).decode("utf-8")
+with open(sys.argv[3], 'w') as f:
+         f.write(keyBase64)
+
+Print(signature)

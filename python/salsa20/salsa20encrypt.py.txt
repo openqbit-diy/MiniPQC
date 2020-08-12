@@ -1,0 +1,36 @@
+from salsa20 import XSalsa20_xor
+from os import urandom
+import binascii
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+
+k=int(sys.argv[1])
+msg=sys.argv[2]
+secretKEY=sys.argv[3]
+IV = os. urandom(k)
+KEY = bytearray(secretKEY, "utf8")
+Message= bytearray(msg, "utf8")
+
+
+keyBase64=standard_b64encode(KEY).decode("utf-8")
+with open(sys.argv[4], 'w') as f:
+         f.write(keyBase64)
+
+ivBase64=standard_b64encode(IV).decode("utf-8")
+with open(sys.argv[5], 'w') as f:
+             f.write(ivBase64)
+
+
+ciphertext = XSalsa20_xor(Message, IV, KEY)
+
+ivBase64=standard_b64encode(ciphertext).decode("utf-8")
+with open(sys.argv[6], 'w') as f:
+             f.write(ivBase64)
+
+print(ciphertext)

@@ -1,0 +1,29 @@
+from cryptovinaigrette import cryptovinaigrette
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+
+
+filePrivateKey=sys.argv[1]
+fileSigned=sys.argv[2]
+
+
+
+
+inputSign = open(sys.argv[3], 'r')
+bufferSign = inputSign.read()
+inputSign.close
+signature=standard_b64decode(bufferSign)
+
+#Case where signature is valid
+check = cryptovinaigrette. rainbowKeygen. verify(sys.argv[1], signature, sys.argv[2])
+
+if check == True :
+     print("Verified successfully!")
+else :
+     print("Signature does not match the file!")

@@ -1,0 +1,14 @@
+from pynewhope import newhope
+import pickle
+import sys
+
+# Step 1: Alice generates random keys and her public msg to Bob
+PrivKey, Msg = newhope.keygen()
+
+with open(sys.argv[1], 'wb') as ft:
+	pickle. dump(PrivKey, fp)
+
+with open(sys.argv[2], 'wb') as ft:
+	pickle.dump(Msg, fp)
+
+print("----- PRIVATE KEY----- ",PrivKey,"----- MESSAGE----- ",Msg)

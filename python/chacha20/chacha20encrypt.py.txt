@@ -1,0 +1,32 @@
+imports
+import sys
+import binascii
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+from chacha20poly1305 import ChaCha20Poly1305
+
+k=int(sys.argv[1])
+n=int(sys.argv[2])
+key = os.urandom(k)
+st=sys.argv[3]
+abin = bytearray(st, "utf8")
+nonce = os.urandom(n)
+cip = ChaCha20Poly1305(key)
+
+ciphertext = cip.encrypt(nonce, abin)
+keyBase64=standard_b64encode(key).decode("utf-8")
+with open(sys.argv[4], 'w') as f:
+         f.write(keyBase64)
+
+nonceBase64=standard_b64encode(nonce).decode("utf-8")
+with open(sys.argv[5], 'w') as f:
+             f.write(nonceBase64)
+
+cipherBase64=standard_b64encode(ciphertext).decode("utf-8")
+with open(sys.argv[6], 'w') as f:
+ f.write(cipherBase64)
+
+print(cipherBase64)

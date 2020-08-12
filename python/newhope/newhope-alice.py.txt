@@ -1,0 +1,15 @@
+from pynewhope import newhope
+import pickle
+import sys
+
+with open(sys.argv[1], 'rb') as ft:
+	bobMsg = pickle.load(fp)
+
+with open(sys.argv[2], 'rb') as ft:
+	PrivKey = pickle.load(fp)
+
+
+AliceSharedKey = newhope.sharedA(bobMsg, PrivKey)
+
+print("----- SHARED KEY ALICE----- ", aliceSharedKey)
+

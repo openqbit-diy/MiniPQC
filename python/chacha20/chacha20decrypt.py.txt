@@ -1,0 +1,29 @@
+imports
+import sys
+import binascii
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+from chacha20poly1305 import ChaCha20Poly1305
+
+inputCipher = open(sys.argv[3], 'r')
+bufferCipher = inputCipher.read()
+inputCipher.close
+
+inputNonce = open(sys.argv[2], 'r')
+bufferNonce = inputNonce.read()
+inputNonce.close
+
+inputKey = open(sys.argv[1], 'r')
+bufferKey = inputKey.read()
+inputKey.close
+
+cipher=standard_b64decode(bufferCipher)
+nonceFile=standard_b64decode(bufferNonce)
+keyFile=standard_b64decode(bufferKey)
+
+cip = ChaCha20Poly1305(keyFile)
+plaintext = cip.decrypt(nonceFile, cipher).decode("utf-8")
+print(plaintext)

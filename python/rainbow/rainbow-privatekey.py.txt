@@ -1,0 +1,5 @@
+from cryptovinaigrette import cryptovinaigrette
+
+# Initialise keygen object and generate keys
+folder= sys.argv[1]
+myKeyObject = cryptovinaigrette.rainbowKeygen(save=folder)

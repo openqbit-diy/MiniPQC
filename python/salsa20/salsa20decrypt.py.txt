@@ -1,0 +1,30 @@
+from salsa20 import XSalsa20_xor
+
+import binascii
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+
+inputCipher = open(sys.argv[1], 'r')
+bufferCipher = inputCipher.read()
+inputCipher.close
+
+inputIV = open(sys.argv[2], 'r')
+bufferIV = inputIV.read()
+inputIV.close
+
+inputKey = open(sys.argv[3], 'r')
+bufferKey = inputKey.read()
+inputKey.close
+
+ciphertext=standard_b64decode(bufferCipher)
+ivFile=standard_b64decode(bufferIV)
+keyFile=standard_b64decode(bufferKey)
+
+
+print(XSalsa20_xor(ciphertext, ivFile, keyFile).decode())

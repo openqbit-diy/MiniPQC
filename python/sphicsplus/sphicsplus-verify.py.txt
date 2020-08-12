@@ -1,0 +1,24 @@
+import pyspx.shake256_128f
+import base64
+import hashlib
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+
+message=sys.argv[1]
+
+inputSign = open(sys.argv[2], 'r')
+bufferSign = inputSign.read()
+inputSign.close
+
+inputKey = open(sys.argv[3], 'r')
+bufferKey = inputKey.read()
+inputKey.close
+
+signature=standard_b64decode(bufferSign)
+public_key=standard_b64decode(bufferKey)
+
+pyspx.shake256_128f.verify(message, signature, public_key)
+

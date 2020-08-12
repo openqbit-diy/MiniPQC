@@ -1,0 +1,26 @@
+import pyspx.shake256_128f
+import base64
+import hashlib
+
+from base64 import standard_b64encode
+from base64 import standard_b64decode
+
+imports
+import sys
+seed=int(sys.argv[1])
+
+seed = os.urandom(sphincs.crypto_sign_SEEDBYTES)
+public_key, secret_key = pyspx.shake256_128f.generate_keypair(seed)
+
+
+keyBase64=standard_b64encode(public_key).decode("utf-8")
+with open(sys.argv[2], 'w') as f:
+         f.write(keyBase64)
+
+
+keyBase64=standard_b64encode(secret_key).decode("utf-8")
+with open(sys.argv[3], 'w') as f:
+         f.write(keyBase64)
+
+print("----PUBLIC KEY----",public_key,"----SECRET KEY----", secret_key)
+
