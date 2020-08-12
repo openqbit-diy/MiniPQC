@@ -14,7 +14,7 @@ Mini PQC (Mini Post-Quantum Cryptography) is Software that includes the followin
 •	RAIBOW
 •	CODECRYPT
 
-The manuals are found in the "HandBooks" directory in the following languages ​​(Spanish, English, Chinese, German, French, Italian, Japanese, Dutch and Portuguese).
+The manuals are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
 
 Extensions are found in the "Extensions" directory which are described in detail in the user manual.
 
