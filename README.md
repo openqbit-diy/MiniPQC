@@ -39,7 +39,9 @@ https://csrc.nist.gov/csrc/media/projects/post-quantum-cryptography/documents/pq
 
 More information:
 
-Foundation OpenQbit.com
+Foundation OpenQbit
+
+www.OpenQbit.com
 
 
 
