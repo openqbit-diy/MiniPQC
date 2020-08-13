@@ -14,9 +14,21 @@ Mini PQC (Mini Post-Quantum Cryptography) is Software that includes the followin
 •	RAIBOW
 •	CODECRYPT
 
+You can use the AES for encryption and decryption algorithm this can be used this algorithm supports future attacks and is considered one of the PQC (Post-Quantum Cryptography).
+
+The extension AES para string:
+com.openqbit.OpenQbitAEStoString.aix (8.0 KB)
+
+The extensions AES para file:
+com.openqbit.OpenQbitAESFileEncryption.aix (7.9 KB)
+com.openqbit.OpenQbitAESFileDecryption.aix (7.6 KB)
+
+You can use the Hash (Sha512 for Message and File) extension supports future attacks and is considered one of the PQC (Post-Quantum Cryptography).
+
+
 The manuals are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
 
-Extensions are found in the "Extensions" directory which are described in detail in the user manual.
+Extensions MiniPQC are found in the "Extensions" directory which are described in detail in the user manual.
 
 Programs python for terminal Termux are found in the "python" directory, these programs must be copied in the path: /data/data/com.termux/files/home
 
