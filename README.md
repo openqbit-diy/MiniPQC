@@ -5,7 +5,7 @@ The free version Post-quantum cryptography with blockly programming - App Invent
 
 What is Mini PQC?
 
-Mini PQC (Mini Post-Quantum Cryptography) is Software that includes the following technological solutions (algorithms) to be able to create PQC (Post-Quantum Cryptography) as follows
+Mini PQC (Mini Post-Quantum Cryptography) is Software that includes the following technological solutions (algorithms) to be able to create PQC (Post-Quantum Cryptography) as follows (Requires using python).
 •	CHACHA20
 •	NEWHOPE
 •	NTRU
@@ -14,23 +14,25 @@ Mini PQC (Mini Post-Quantum Cryptography) is Software that includes the followin
 •	RAIBOW
 •	CODECRYPT
 
-You can use the AES for encryption and decryption algorithm this can be used this algorithm supports future attacks and is considered one of the PQC (Post-Quantum Cryptography).
+You can use the AES and Hash (Sha512) for encryption and decryption algorithm this can be used this algorithm supports future attacks and is considered one of the PQC (Post-Quantum Cryptography) - Does not Requires using python, ony install extension and use direct in App Inventor, Kondular, or other system blockly.
 
 The extension AES para string:
 
-com.openqbit.OpenQbitAEStoString.aix (8.0 KB)
+com.openqbit.OpenQbitAEStoString.aix
 
 The extensions AES para file:
 
-com.openqbit.OpenQbitAESFileEncryption.aix (7.9 KB)
+com.openqbit.OpenQbitAESFileEncryption.aix 
 
-com.openqbit.OpenQbitAESFileDecryption.aix (7.6 KB)
+com.openqbit.OpenQbitAESFileDecryption.aix
 
 
 You can use the Hash (Sha512 for Message and File) extension supports future attacks and is considered one of the PQC (Post-Quantum Cryptography).
 
+com.openqbit.OpenQbitStringHash.aix
+com.openqbit.OpenQbitFilegHash.aix
 
-The manuals are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
+The user's guide are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
 
 Extensions MiniPQC are found in the "Extensions" directory which are described in detail in the user manual.
 
