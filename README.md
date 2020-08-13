@@ -30,6 +30,7 @@ com.openqbit.OpenQbitAESFileDecryption.aix
 You can use the Hash (Sha512 for Message and File) extension supports future attacks and is considered one of the PQC (Post-Quantum Cryptography).
 
 com.openqbit.OpenQbitStringHash.aix
+
 com.openqbit.OpenQbitFilegHash.aix
 
 The user's guide are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
