@@ -31,7 +31,7 @@ You can use the Hash (Sha512 for Message and File) extension supports future att
 
 com.openqbit.OpenQbitStringHash.aix
 
-com.openqbit.OpenQbitFilegHash.aix
+com.openqbit.OpenQbitFileHash.aix
 
 The user's guide are found in the "HandBooks" directory in the following languages ​​(Spanish and English).
 
