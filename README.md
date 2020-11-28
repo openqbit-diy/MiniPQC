@@ -58,9 +58,11 @@ https://csrc.nist.gov/csrc/media/projects/post-quantum-cryptography/documents/pq
 
 More information:
 
-Foundation OpenQbit
+By OpenQbit.
 
-www.OpenQbit.com
+www.OpenQbit.com & www.coinsolidation.org
+
+Developments launched in Estonia 2020-2021
 
 
 
