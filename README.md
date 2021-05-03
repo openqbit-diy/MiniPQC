@@ -1,4 +1,7 @@
 # MiniPQC
+
+By www.OpenQbit.com and www.COINsolidation.org
+
 The free version Post-quantum cryptography with blockly programming - App Inventor and others systems blockly.
 
 ![miniqpcLogoDoc](https://user-images.githubusercontent.com/60530547/89971478-f07cdb00-dc20-11ea-9af3-5867004c7019.png)
